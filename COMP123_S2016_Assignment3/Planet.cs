@@ -7,6 +7,7 @@ namespace COMP123_S2016_Assignment3
 {
     public abstract class Planet
     {
+        // PRIVATE INSTANCE VARIABLES 
         private double _diameter;
         private double _mass;
         private int _moonCount;
@@ -15,11 +16,13 @@ namespace COMP123_S2016_Assignment3
         private int _ringCount;
         private double _rotationPeriod;
 
+        // PUBLIC PROPERTIES 
+       
         public double Diameter
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._diameter;
             }
             set
             {
@@ -30,7 +33,7 @@ namespace COMP123_S2016_Assignment3
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._mass;
             }
             set
             {
@@ -41,10 +44,11 @@ namespace COMP123_S2016_Assignment3
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._moonCount;
             }
             set
             {
+                this._moonCount = value;
             }
         }
 
@@ -52,7 +56,7 @@ namespace COMP123_S2016_Assignment3
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._name;
             }
             set
             {
@@ -63,10 +67,11 @@ namespace COMP123_S2016_Assignment3
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._orbitalPeriod;
             }
             set
             {
+                this._orbitalPeriod = value;
             }
         }
 
@@ -74,10 +79,11 @@ namespace COMP123_S2016_Assignment3
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._ringCount;
             }
             set
             {
+                this._ringCount = value;
             }
         }
 
@@ -85,16 +91,25 @@ namespace COMP123_S2016_Assignment3
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._rotationPeriod;
             }
             set
             {
+                this._rotationPeriod = value;
             }
         }
 
-        public string ToString()
+        // CONSTRUCTORS 
+
+        public Planet(string name, double diameter, double mass)
         {
-            throw new System.NotImplementedException();
+
+        }
+
+        // PUBLIC METHODS 
+        public override void ToString()
+        {
+           
         }
     }
 }

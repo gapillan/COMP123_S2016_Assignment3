@@ -7,16 +7,44 @@ namespace COMP123_S2016_Assignment3
 {
     public class GiantPlanet : Planet, IHasMoons, IHasRings
     {
+        // PRIVATE INSTANCE VARIABLES 
         private string _type;
 
+        // PUBLIC PROPERTIES 
+
+        public string Type 
+        {
+            get 
+            {
+                return this._type;
+            }
+            set
+            {
+                this._type = value;
+            }
+        }
         public bool HasMoons()
         {
-            throw new System.NotImplementedException();
+            if (MoonCount > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public bool HasRings()
         {
-            throw new System.NotImplementedException();
+            if (RingCount > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false; 
+            }
         }
     }
 }
