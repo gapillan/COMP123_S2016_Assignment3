@@ -2,18 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace COMP123_S2016_Assignment3
 {
-    class Program
+    public class GiantPlanet
     {
-        static void Main(string[] args)
+        private string _type;
+
+        public bool HasMoons()
         {
-            
+            throw new System.NotImplementedException();
         }
 
-        public void waitForAnyKey()
+        public bool HasRings()
         {
             throw new System.NotImplementedException();
         }
