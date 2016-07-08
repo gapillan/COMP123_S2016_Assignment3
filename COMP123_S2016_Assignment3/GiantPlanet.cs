@@ -5,7 +5,7 @@ using System.Text;
 
 namespace COMP123_S2016_Assignment3
 {
-    public class GiantPlanet
+    public class GiantPlanet : Planet, IHasMoons, IHasRings
     {
         private string _type;
 
