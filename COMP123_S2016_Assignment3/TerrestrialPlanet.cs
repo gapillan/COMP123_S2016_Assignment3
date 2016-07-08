@@ -5,7 +5,7 @@ using System.Text;
 
 namespace COMP123_S2016_Assignment3
 {
-    public class TerrestrialPlanet : Planet, IHasMoons, IHasRings
+    public class TerrestrialPlanet : Planet, IHasMoons, IHabitable
     {
         private bool _oxygen;
 

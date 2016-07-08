@@ -7,5 +7,6 @@ namespace COMP123_S2016_Assignment3
 {
     public interface IHasMoons
     {
+        bool HasMoons();
     }
 }
