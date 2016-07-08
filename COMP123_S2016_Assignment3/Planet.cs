@@ -103,7 +103,9 @@ namespace COMP123_S2016_Assignment3
 
         public Planet(string name, double diameter, double mass)
         {
-
+            this._name = name;
+            this._diameter = diameter;
+            this._mass = mass;
         }
 
         // PUBLIC METHODS 

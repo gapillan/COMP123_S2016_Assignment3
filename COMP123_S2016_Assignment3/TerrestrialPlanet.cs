@@ -9,14 +9,40 @@ namespace COMP123_S2016_Assignment3
     {
         private bool _oxygen;
 
+        public bool Oxygen 
+        {
+            get 
+            {
+                return this._oxygen;
+            }
+            set 
+            {
+                this._oxygen = value;
+            }
+        }
+
         public bool Habitable()
         {
-            throw new System.NotImplementedException();
+            if(Oxygen == true) 
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public bool HasMoons()
         {
-            throw new System.NotImplementedException();
+            if (MoonCount > 0)
+            {
+                return true;
+            }
+            else 
+            {
+                return false;
+            }
         }
     }
 }
