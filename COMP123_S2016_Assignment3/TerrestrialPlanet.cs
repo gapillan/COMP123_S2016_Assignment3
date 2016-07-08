@@ -7,8 +7,10 @@ namespace COMP123_S2016_Assignment3
 {
     public class TerrestrialPlanet : Planet, IHasMoons, IHabitable
     {
+        // PRIVATE INSTANCE VARIABLES 
         private bool _oxygen;
 
+        // PUBLIC PROPERTIES 
         public bool Oxygen 
         {
             get 
@@ -43,6 +45,13 @@ namespace COMP123_S2016_Assignment3
             {
                 return false;
             }
+        }
+
+        // CONSTRUCTORS 
+
+        public TerrestrialPlanet(string name, double diameter, double mass, bool oxygen) 
+        {
+            this._oxygen = oxygen;
         }
     }
 }
