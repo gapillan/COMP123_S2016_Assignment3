@@ -46,5 +46,13 @@ namespace COMP123_S2016_Assignment3
                 return false; 
             }
         }
+
+        // CONSTRUCTORS 
+
+        public GiantPlanet(string name, double diameter, double mass, string type) 
+            : base(name, diameter, mass)
+        {
+            this._type = type;
+        }
     }
 }
