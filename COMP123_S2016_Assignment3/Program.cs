@@ -10,12 +10,18 @@ namespace COMP123_S2016_Assignment3
     {
         static void Main(string[] args)
         {
-            
+            Console.WriteLine("Giant Planet");
+            Console.WriteLine("+++++++++++++++++++");
+            GiantPlanet giantPlanet = new GiantPlanet("Ganymede", 3270526210, 4213678010, "Poop");
+            Console.WriteLine(giantPlanet.ToString());
+
+
+
         }
 
         public void waitForAnyKey()
         {
-            throw new System.NotImplementedException();
+            
         }
     }
 }

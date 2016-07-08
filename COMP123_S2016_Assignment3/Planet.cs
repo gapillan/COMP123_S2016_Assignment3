@@ -109,9 +109,10 @@ namespace COMP123_S2016_Assignment3
         }
 
         // PUBLIC METHODS 
-        public override void ToString()
+        public override string ToString()
         {
-           
+            return String.Format("Planet Name: {0}, Diameter of Planet: {1}, Mass of Planet: {2}", 
+                this.Name, this.Diameter, this.Mass);
         }
     }
 }

@@ -50,6 +50,7 @@ namespace COMP123_S2016_Assignment3
         // CONSTRUCTORS 
 
         public TerrestrialPlanet(string name, double diameter, double mass, bool oxygen) 
+            : base(name, diameter, mass)
         {
             this._oxygen = oxygen;
         }
